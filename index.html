@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sir 🎉</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    overflow-x:hidden;
+}
+
+/* SECTION */
+section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:25px;
+}
+
+/* PHOTO RING */
+.photo-frame{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    padding:12px;
+    background: conic-gradient(#ff4d6d,#ffd166,#ff9a9e,#ff4d6d);
+    box-shadow:0 15px 30px rgba(0,0,0,.35);
+}
+
+.photo-frame img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+}
+
+/* TEXT */
+.decor{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size:2.4rem;
+    font-weight:800;
+    color:white;
+    margin-top:20px;
+}
+
+.subtitle{
+    color:white;
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:25px;
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4d6d;
+    font-size:1.1rem;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+/* MESSAGE CARD */
+.message{
+    background:white;
+    padding:30px 25px;
+    border-radius:25px;
+    max-width:480px;
+}
+
+.message h2{
+    color:#ff4d6d;
+    margin-bottom:15px;
+}
+
+.message p{
+    font-size:1.05rem;
+    line-height:1.7;
+    color:#333;
+}
+
+.sign{
+    margin-top:20px;
+    font-weight:bold;
+    color:#444;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section>
+    <div class="decor">🎂 🎉 🎈</div>
+
+    <div class="photo-frame">
+        <img src="sir.jpg" alt="Sir Photo">
+    </div>
+
+    <h1 class="title">HAPPY BIRTHDAY<br>MUSTAFA SIR</h1>
+
+    <p class="subtitle">
+        It’s a day to celebrate your birthday…<br>
+        Enjoy your day!!!!
+    </p>
+
+    <button class="btn" onclick="goNext()">Start the Celebration 🎊</button>
+</section>
+
+<!-- PAGE 2 -->
+<section id="msg">
+    <div class="message">
+        <h2>Special Message 💐</h2>
+
+        <p>
+            Dear Sir,<br><br>
+            No matter how many beautiful words I try to write for you, Sir,
+            they will never be enough. You are truly incredible to me.
+            Allah sent you into my life as a <em>jariyah</em> that changed me forever.<br><br>
+
+            Many people have influenced my life, but among the best,
+            you are one of the most special.<br><br>
+
+            May Allah grant you a long and healthy life, make you a source
+            of goodness for many, and reward you with increasing
+            <em>neki</em> every single day.
+            May Allah give you all that you deserve.<br><br>
+
+            Once again, Happy Birthday, Sir.
+            May Allah always keep you under His mercy and blessings.
+        </p>
+
+        <div class="sign">
+            – With Respect & Gratitude 🌸<br>
+            Arzoo Vohra
+        </div>
+    </div>
+</section>
+
+<script>
+function goNext(){
+    document.getElementById("msg")
+    .scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
